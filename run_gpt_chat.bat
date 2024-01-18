@@ -17,9 +17,12 @@ if "%OPENAI_API_KEY%"=="" (
 echo Installing required packages...
 pip install openai
 
+:: Clear the console
+cls
+
 :: Run the Python program
 echo Running the program...
-python ./gpt_chat.py
+python gpt_chat.py
 
 pause
 endlocal

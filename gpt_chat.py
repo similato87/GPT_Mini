@@ -13,7 +13,8 @@ def chat_with_gpt(api_key):
     client = OpenAI(api_key=api_key)
 
     while True:
-        user_message = input("Enter your message (or 'quit' to exit): ")
+        user_message = input("Enter your message for GPT-4(or 'quit' to exit): ")
+        print("Getting results can take tens of seconds. The results will be displayed in the Editor.")
         if user_message.lower() == 'quit':
             break
 
